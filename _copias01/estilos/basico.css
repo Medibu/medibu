@@ -1,0 +1,170 @@
+/*Para que el borde no cuente en el tamaño de las cajas*/
+*{box-sizing: border-box;}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+header{
+  background-color: #fbe3c1;
+}
+header video{
+	width: 100%;
+	max-height: 480px;
+}
+
+#galeria{
+  margin: 4rem 2rem;
+  text-align: center;
+}
+/*Crear un objeto vacío por CSS para romper el float de la galeria*/
+#galeria:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+.miniatura{
+  float: left;
+  border: 1px solid #DDD;
+	position: relative;
+  width: 50%;
+}
+/* Dispositivos medianos (tablets en horizontal, 768px y superiores) */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	#galeria{
+	  margin: 4rem 4rem;
+	}
+	.miniatura{
+    width: 33%;
+  }
+}
+/* Dispositivos grandes (portátiles y sobremesa, 992px y superiores) */
+@media only screen and (min-width: 992px) {
+	#galeria{
+	  margin: 4rem 8rem;
+	}
+}
+/* Dispositivos muy grandes (portátiles y sobremesa grandes, y superiores) */
+@media only screen and (min-width: 1200px){
+  .miniatura{
+    width: 25%;
+  }
+	#galeria{
+		margin: 4rem 12rem;
+	}
+}
+
+/*Para que las miniaturas sean siempre cuadradas*/
+.miniatura:after{
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+.miniaturacontenido{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.miniaturacontenido img{
+  width: 100%;
+  height: auto;
+}
+.miniaturacontenido{
+	opacity: 1;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+.miniaturacontenido:hover{
+	opacity: 0.5;
+}
+@supports(object-fit: cover){
+    .miniaturacontenido img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+#muchosmas{
+  text-align: center;
+}
+#muchosmas span{
+  font-family: 'Gochi Hand', cursive;
+  color: #7ACAB5;
+  font-size: 2.5rem;
+}
+#muchosmas img{
+	vertical-align: middle;
+	width: 4rem;
+}
+#cocodroloescondido{
+  position: relative;
+  height: 3rem;
+}
+#cocodroloescondido img{
+  height: 6rem;
+  position: absolute;
+  right: 20%;
+  bottom: -3rem;
+}
+/* Dispositivos medianos (tablets en horizontal, 768px y superiores) */
+@media only screen and (min-width: 768px){
+  #cocodroloescondido{
+  	position: relative;
+  	height: 9rem;
+  }
+  #cocodroloescondido img{
+  	height: 12rem;
+  	position: absolute;
+  	right: 20%;
+  	bottom: -3rem;
+  }
+}
+#sombra{
+	height: 3rem;
+	background: linear-gradient(0deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+}
+#cualidades, #servicios{
+  background-color: #FDF6ED;
+	text-align: center;
+}
+#cualidades img{
+	max-width: 1600px;
+}
+/* Dispositivos muy grandes (portátiles y sobremesa grandes, y superiores) */
+@media only screen and (min-width: 1200px){
+	#servicios{
+		max-height: 75rem;
+		Overflow :hidden;
+	}
+}
+footer{
+  color: white;
+  background-color: #7ACAB5;
+  text-align: center;
+  padding: 0.7rem;
+}
+footer div{
+  padding: 0.5rem;
+}
+footer img{
+  border-radius: 50%;
+	margin: 0.2rem;
+	width: 2.5rem;
+	height: auto;
+}
+#copyright{
+	font-size: 1rem;
+}
+/* Dispositivos medianos (tablets en horizontal, 768px y superiores) */
+@media only screen and (min-width: 768px){
+  #copyright{
+  	font-size: 0.8rem;
+  }
+}

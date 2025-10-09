@@ -1,0 +1,93 @@
+header{  
+  position: relative;
+  height: 5rem;
+}
+#bu{
+  width: 8rem;
+  height: 8rem;
+  margin-left: 10%;
+  border-radius: 5rem;
+  background-color: #fbe3c1;
+  box-shadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.2); 
+}
+#volver{
+  position: sticky;
+  top: 0rem;
+  margin-top: -1rem;
+  padding-top: 1rem;
+  width: 85%;
+  text-align: right;
+}
+#volver span{
+  color: #FFF;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 1rem 2rem;
+  border-radius: 0rem 0rem 2rem 2rem;
+  background-color: #fbe3c1;
+}
+
+/* Dispositivos medianos (tablets en horizontal, 768px y superiores) */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  #bu{
+    width: 8rem;
+    height: 8rem;
+    margin-left: 10%;
+  }
+  #volver{
+    width: 85%;
+  }
+  #volver span{
+    font-size: 1.2rem;
+    padding: 1rem 2rem;    
+  }
+}
+/* Dispositivos grandes (portátiles y sobremesa, 992px y superiores) */
+@media only screen and (min-width: 992px) {
+  #bu{
+    width: 8rem;
+    height: 8rem;
+    margin-left: 10%;
+  }
+  #volver {
+    width: 85%;
+  }
+  #volver span{
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+}
+
+#contenido{  
+  width: 100%;
+  flex-flow: column;  
+  text-align: center;
+}
+#contenido img{
+  width: 100%;
+  max-width: 37.5rem;
+  margin: 0.2rem auto;
+  display: block;
+}
+#contenido p{
+  margin: 1rem 0rem 4rem 0rem;
+}
+.marco{
+  border: 1px solid #fbe3c1;
+}
+.fotoenlace{
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  padding: 0.5rem;  
+  border: 2px solid #CCC;
+}
+.fotoenlace:hover{
+  opacity: 0.5;
+}
+#canvas{
+  width: 100%;
+  max-width: 700px;
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <?php include 'inc/head_common.php'; ?>
+
+    <title>David Medibú. Diseño</title>
+  </head>
+  <body onload="init();">
+
+    <?php include 'inc/header.php'; ?>
+
+    <div class="linea"></div>
+
+    <nav class="navbar navbar-expand-sm justify-content-center" id="menu">
+      <div class="navbar-nav col-12 col-lg-8 justify-content-center">
+        <a href="ilus.php" class="nav-link">Ilustración</a>
+        <a href="dise.php" class="nav-link disabled">Diseño gráfico</a>
+        <a href="mult.php" class="nav-link">Multimedia</a>
+        <a href="3d.php" class="nav-link">3D</a>
+        <a href="prod.php" class="nav-link">Productos</a>
+      </div>
+    </nav>
+
+    <section id="contenido">
+
+        <div class="container-fluid">
+            <video width="640" height="360" autoplay loop>
+                <source src="contenido/diseno/vídeo-logos-640x360.mp4" type="video/mp4">
+                Tu navegador no puede visualizar este vídeo
+            </video>  
+        </div>
+
+
+        <div class="container-fluid fotoenlace" style="background-color: #85c9ee;">
+            <a href="dise-dest-croupi.php">
+                <img src="contenido/diseno/dest-croupi.jpg" alt="Croupi" />
+            </a>
+        </div>
+
+        <div class="container-fluid fotoenlace" style="background-color: #faf0e6;">
+            <a href="dise-dest-sharon.php">
+                <img src="contenido/diseno/dest-sharon.jpg" alt="Sharon Bates" />
+            </a>
+        </div>
+
+        <div class="container-fluid fotoenlace" style="background-color: #61bfe5;">
+            <a href="dise-dest-carteles.php">
+                <img src="contenido/diseno/dest-carteles.jpg" alt="Carteles" />
+            </a>
+        </div>
+
+        <div class="container-fluid fotoenlace" style="background-color: #ffffff;">
+            <a href="dise-dest-logos.php">
+                <img src="contenido/diseno/dest-logos.jpg" alt="Logos" />
+            </a>
+        </div>
+
+        <div class="container-fluid fotoenlace" style="background-color: #f2e1c3;">
+            <a href="dise-dest-medibu.php">
+                <img src="contenido/diseno/dest-medibu.jpg" alt="Medibú" />
+            </a>
+        </div>
+
+        </br>
+      
+    </section>
+
+    <div class="linea"></div>
+
+    <?php include 'inc/footer.php'; ?>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
