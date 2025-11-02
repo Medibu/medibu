@@ -14,7 +14,7 @@ header{
 }
 header video{
 	width: 100%;
-	max-height: 480px;
+	max-height: 360px;
 }
 
 #galeria{
@@ -92,6 +92,7 @@ header video{
 }
 #muchosmas{
 	text-align: center;
+	margin-top: 7rem; 
 }
 #muchosmas a{
   display: flex;  
@@ -141,6 +142,122 @@ header video{
 	height: 3rem;
 	background: linear-gradient(0deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
 }
+#bannerblog{
+	margin: 3rem auto 2.5rem auto;
+	max-width: 1200px; 
+	text-align: center;
+	position: relative;
+	padding: 2rem 0; 
+}
+#bannerblog{
+	position: relative;
+}
+#bannerblog::before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200%; 
+	height: 80%;
+	background-color: #fbe3c1; /* beige sin transparencia */
+	transform: translate(-50%, -50%) rotate(-5deg);
+	z-index: -3;
+}
+#bannerblog::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 82%; 
+	height: 80%; 
+	background-color: transparent;
+	border: 3px solid rgba(122, 202, 181, 0.8); /* contorno verde con 80% opacidad */
+	transform: translate(-50%, -50%) rotate(3deg);
+	z-index: -2;
+}
+.rectangulo-verde{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%; /* más estrecho */
+	height: 80%;
+	background-color: rgba(122, 202, 181, 0.8); /* verde sólido con 80% opacidad */
+	transform: translate(-50%, -50%) rotate(5deg);
+	box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.15);
+	z-index: -1;
+}
+.sombra-1{
+	position: absolute;
+	top: 52%;
+	left: 52%;
+	width: 200%;
+	height: 80%;
+	background-color: #666;
+	filter: blur(20px);
+	opacity: 0.3;
+	transform: translate(-50%, -50%) rotate(-5deg);
+	z-index: -4;
+}
+#bannerblog a{
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.35rem;
+	padding: 1.2rem 2rem;
+	width: 100%;
+	max-width: 800px; /* limita el ancho del bloque interno */
+	transition: transform 200ms ease;
+}
+#bannerblog img{
+	width: 20rem;
+	height: auto;
+	padding-top: 1rem;
+	transition: transform 200ms ease;
+}
+#bannerblog a:hover img{
+	transform: rotate(-3deg) scale(1.06);
+}
+#bannerblog a:hover{
+	transform: translateY(-2px);
+}
+
+#bannerblog .titulo-roboto{
+	font-family: 'Roboto', sans-serif; /* misma fuente que subtitulo */
+	color: white; /* texto blanco */
+	font-size: 1.05rem; /* mismo tamaño que subtitulo */
+}
+#bannerblog .titulo-gochi{
+	font-family: 'Gochi Hand', cursive; /* misma fuente que "muchos más" */
+	color: #7ACAB5;
+	font-size: 2.7rem; /* 150% de 1.8rem */
+}
+#bannerblog .subtitulo{
+	color: white; /* texto blanco */
+	font-size: 1.05rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 1.2;
+}
+#bannerblog .subtitulo .linea1,
+#bannerblog .subtitulo .linea2{
+	display: block;
+}
+#bannerblog .subtitulo .destacado{
+	font-weight: bold;
+}
+/* Dispositivos grandes */
+@media only screen and (min-width: 992px) {
+	#bannerblog .titulo-roboto{ font-size: 1.15rem; } /* mismo tamaño que subtitulo */
+	#bannerblog .titulo-gochi{ font-size: 3.3rem; } /* 150% de 2.2rem */
+	#bannerblog .subtitulo{ font-size: 1.15rem; }
+}
+/* Dispositivos medianos (fila con icono) */
+@media only screen and (min-width: 768px){
+	#bannerblog a{ flex-direction: row; gap: 1rem; }
+	#bannerblog img{ width: 20rem; height: auto; }
+}
 #cualidades, #servicios{
 	text-align: center;
   background-color: #FDF6ED;
@@ -149,7 +266,7 @@ header video{
 	width: 100%;
 }
 #cualidades img, #servicios img{
-	max-width: 1600px;
+	max-width: 1200px;
 }
 footer{
   color: white;
