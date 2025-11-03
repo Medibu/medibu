@@ -113,7 +113,7 @@
         <img src="imagenes/Editorial-buñuelos.png" alt="Editorial Buñuelos">
         <span class="subtitulo">
           <span class="linea1">donde publico</span>
-          <span class="linea2">mis <span class="destacado">cuentos infantiles.</span></span>
+          <span class="linea2">mis <span class="destacado">cuentos infantiles</span></span>
         </span>
       </a>
     </div>
