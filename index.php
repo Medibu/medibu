@@ -108,7 +108,7 @@
     <div id="bannerblog">
       <div class="sombra-1"></div>
       <div class="rectangulo-verde"></div>
-      <a href="https://editorialbu.wordpress.com/" target="_blank" rel="noopener">
+      <a href="https://www.davidmedibu.com/editorialbu" target="_blank" rel="noopener">
         <span class="titulo-roboto">Conoce</span>
         <img src="imagenes/Editorial-buñuelos.png" alt="Editorial Buñuelos">
         <span class="subtitulo">
