@@ -266,13 +266,16 @@ header video{
 }
 #cualidades, #servicios{
 	text-align: center;
-  background-color: #FDF6ED;
+}
+#cualidades{	
+	background-color: #FDF6ED;
+	padding: 4rem 0;
 }
 #servicios img{
 	width: 100%;
 }
 #cualidades img, #servicios img{
-	max-width: 1200px;
+	max-width: 60rem;
 }
 footer{
   color: white;
