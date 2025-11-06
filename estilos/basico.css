@@ -150,13 +150,11 @@ header video{
 #bannerblog{
 	margin: 3rem auto 2.5rem auto;
 	max-width: 1200px; 
+	width:100%;
 	text-align: center;
 	position: relative;
 	padding: 2rem 0; 
-}
-#bannerblog{
-	position: relative;
-	width:100%;
+	overflow-x: hidden;
 }
 #bannerblog::before{
 	content: '';
