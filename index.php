@@ -105,6 +105,9 @@
         </div>
       </div>
     </section>
+    <section id="servicios">
+      <img src="imagenes/servicios.gif" alt="servicios">
+    </section>
     <div id="bannerblog">
       <div class="sombra-1"></div>
       <div class="rectangulo-verde"></div>
@@ -136,9 +139,7 @@
       <img src="imagenes/cualidades.svg" alt="cualidades">
     </section>
 
-    <section id="servicios">
-      <img src="imagenes/servicios.gif" alt="servicios">
-    </section>
+
 
     <?php include 'inc/footer.php'; ?>
 
