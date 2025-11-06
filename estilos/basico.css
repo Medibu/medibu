@@ -147,6 +147,7 @@ header video{
 	height: 3rem;
 	background: linear-gradient(0deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
 }
+
 #bannerblog{
 	margin: 3rem auto 2.5rem auto;
 	/*max-width: 1200px; */
@@ -154,7 +155,6 @@ header video{
 	text-align: center;
 	position: relative;
 	padding: 2rem 0; 
-	overflow-x: hidden;
 }
 #bannerblog::before{
 	content: '';
