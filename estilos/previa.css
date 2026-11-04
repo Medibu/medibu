@@ -1,0 +1,101 @@
+/* Previa de davidmedibu.com. Se carga DESPUÉS de tu reset y tu CSS base (usa su reset, su box-sizing y su overflow-x). */
+:root{--verde:#95c9b4;--verde-claro:#cae4d9;--beige:#F2E1C3;--crema:#faf3e5;--tinta:#453524;--gochi:'Gochi Hand',cursive}
+body.previa{font-family:'Roboto',sans-serif;font-size:1rem;line-height:1.3;color:var(--tinta);background:#b3dcef}
+body.previa>*:not(.fondo){position:relative;z-index:1}
+
+/* ===== Fondo: cielo, nubes y cabeza de Cocodrolo con parallax ===== */
+.fondo{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;
+  background:linear-gradient(180deg,#86c4e6 0%,#b3dcef 55%,#f4ecd8 100%)}
+.fondo::after{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' seed='3'/%3E%3CfeColorMatrix values='0 0 0 0 .27 0 0 0 0 .21 0 0 0 0 .14 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:220px}
+.capa{position:absolute;inset:-6% -4%;will-change:transform;transition:transform .2s ease-out}
+.capa svg{display:block;width:100%;height:100%}
+.cabeza{position:absolute;right:-8vw;bottom:0;width:min(115vw,170vh);will-change:transform;transition:transform .2s ease-out}
+.cabeza svg{display:block;width:100%;height:auto;transform:translateY(57%) rotate(-5deg);transform-origin:80% 100%}
+
+#previa{padding:clamp(1.5rem,5vw,3.5rem) 1.25rem 6rem}
+.previa-cabecera{text-align:center;max-width:36rem;margin:0 auto 4.5rem}
+.logo-nube{position:relative;isolation:isolate;width:min(30rem,86vw);margin:0 auto}
+.logo-nube img{display:block;width:100%;height:auto;transform:rotate(-2deg)}
+.logo-nube .nube{position:absolute;z-index:-1;left:50%;top:50%;width:124%;translate:-50% -43%;pointer-events:none;animation:deriva 14s ease-in-out infinite alternate}
+.logo-nube .nube svg{display:block;width:100%;height:auto}
+@keyframes deriva{from{translate:calc(-50% - 14px) -43%}to{translate:calc(-50% + 14px) -43%}}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(2rem,5vw,4.5rem);max-width:1150px;margin:0 auto;align-items:start}
+.cards li:nth-child(2){margin-top:3.5rem}
+
+.card{
+  position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:.8rem;min-height:25rem;padding:4.2rem 3.4rem;text-align:center;color:var(--tinta);isolation:isolate;
+}
+.card:focus-visible{outline:3px solid var(--tinta);outline-offset:10px;border-radius:30%}
+
+.m{
+  position:absolute;z-index:-1;background:var(--a);opacity:.78;mix-blend-mode:multiply;margin:-5% -6%;
+  rotate:var(--rot);border-radius:var(--r1);
+  animation:brota .9s cubic-bezier(.3,1.5,.5,1) backwards,flota 14s ease-in-out .9s infinite alternate;
+  transition:translate .7s cubic-bezier(.3,1.6,.5,1),scale .7s cubic-bezier(.3,1.6,.5,1);
+}
+.m:nth-child(1){inset:2% 5% 0 0;--rot:-7deg;--a:var(--c1);--r1:58% 42% 52% 48%/46% 56% 44% 54%;--r2:46% 54% 60% 40%/54% 44% 56% 46%}
+.m:nth-child(2){inset:0 0 6% 9%;--rot:5deg;--a:var(--c2);--r1:44% 56% 47% 53%/57% 43% 57% 43%;--r2:56% 44% 42% 58%/44% 58% 42% 56%;animation-delay:.1s,.9s}
+.m:nth-child(3){inset:9% 11% 7% 5%;--rot:-3deg;--a:var(--c3);--r1:53% 47% 61% 39%/48% 59% 41% 52%;--r2:42% 58% 50% 50%/58% 42% 58% 42%;animation-delay:.2s,.9s}
+.m:nth-child(4){inset:-3% 15% 11% 13%;--rot:10deg;--a:var(--c4);--r1:49% 51% 40% 60%/56% 44% 56% 44%;--r2:60% 40% 55% 45%/42% 58% 46% 54%;animation-delay:.3s,.9s}
+.cards li:nth-child(2) .m{animation-delay:.3s,.9s}
+.cards li:nth-child(3) .m{animation-delay:.6s,.9s}
+.cards li:nth-child(1) .card{--c1:var(--verde);--c2:var(--beige);--c3:var(--verde-claro);--c4:var(--crema)}
+.cards li:nth-child(2) .card{--c1:var(--beige);--c2:var(--verde);--c3:var(--crema);--c4:var(--verde-claro)}
+.cards li:nth-child(3) .card{--c1:var(--verde-claro);--c2:var(--beige);--c3:var(--verde);--c4:var(--crema)}
+.card::after{
+  content:"";position:absolute;inset:7% 5%;z-index:-1;background:var(--crema);opacity:.94;
+  border-radius:52% 48% 55% 45%/48% 54% 46% 52%;rotate:-2deg;
+  animation:flota 16s ease-in-out infinite alternate-reverse;--r2:46% 54% 44% 56%/55% 45% 55% 45%;--rot:-2deg;
+}
+.card:hover .m:nth-child(odd),.card:focus-visible .m:nth-child(odd){translate:-7px -5px;scale:1.03}
+.card:hover .m:nth-child(even),.card:focus-visible .m:nth-child(even){translate:8px 6px;scale:1.03}
+@keyframes flota{to{border-radius:var(--r2);rotate:calc(var(--rot) + 6deg)}}
+@keyframes brota{from{scale:0;rotate:-30deg}}
+
+.card h2{font-family:var(--gochi);font-weight:400;font-size:clamp(2.4rem,3.6vw,3rem);line-height:1.05;text-wrap:balance}
+.card p{max-width:13.5rem;font-size:1.05rem;text-wrap:balance}
+
+/* CTA: forma orgánica como las capas de las cards, con volumen interno y sin sombra proyectada */
+.card span.ver{
+  position:relative;isolation:isolate;margin-top:.9rem;padding:.8rem 2.1rem;
+  color:var(--crema);font-weight:700;font-size:1.05rem;
+}
+.card span.ver::before,.card span.ver::after{
+  content:"";position:absolute;z-index:-1;transition:border-radius .5s,rotate .5s cubic-bezier(.3,1.6,.5,1),translate .5s;
+}
+.card span.ver::before{ /* capa principal, marrón, con sombra interna */
+  inset:0;background:var(--tinta);rotate:-1.5deg;border-radius:56% 44% 52% 48%/64% 58% 42% 36%;
+  box-shadow:inset 0 -5px 8px rgba(0,0,0,.35),inset 0 3px 5px rgba(255,255,255,.14);
+}
+.card span.ver::after{ /* capa de papel verde, parcialmente asomando */
+  inset:-3px -7px -2px 8px;background:var(--verde);rotate:2.5deg;border-radius:46% 54% 44% 56%/52% 44% 56% 48%;z-index:-2;
+}
+.card:hover span.ver::before,.card:focus-visible span.ver::before{rotate:1deg;border-radius:46% 54% 58% 42%/48% 62% 38% 52%}
+.card:hover span.ver::after,.card:focus-visible span.ver::after{rotate:-3deg;translate:-5px 2px;border-radius:55% 45% 50% 50%/42% 56% 44% 58%}
+
+#sombra{height:3rem;background:linear-gradient(0deg,rgba(0,0,0,.1),rgba(0,0,0,0))}
+footer.previa-pie{color:var(--tinta);background:var(--verde);text-align:center;padding:.7rem}
+footer.previa-pie div{padding:.5rem}
+.redes{display:flex;justify-content:center;flex-wrap:wrap;gap:.7rem}
+.redes a{display:grid;place-items:center;width:2.75rem;height:2.75rem;border-radius:50%;background:var(--crema);color:var(--tinta);transition:background .25s,color .25s,transform .25s}
+.redes a:hover,.redes a:focus-visible{background:var(--tinta);color:var(--crema);transform:translateY(-2px)}
+.redes a:focus-visible{outline:3px solid var(--tinta);outline-offset:3px}
+.redes svg{width:1.4rem;height:1.4rem;fill:currentColor}
+#copyright{font-size:1.2rem}
+@media (min-width:768px){#copyright{font-size:1rem}}
+
+@media (max-width:820px){
+  .cards{grid-template-columns:1fr;max-width:24rem;gap:3.5rem}
+  .cards li:nth-child(2){margin-top:0}
+  .cards li:nth-child(odd){margin-right:1.2rem}
+  .cards li:nth-child(even){margin-left:1.2rem}
+  .card{min-height:22rem}
+  .cabeza{width:min(210vw,120vh);right:-60vw}
+  .logo-nube .nube{width:112%}
+}
+@media (prefers-reduced-motion:reduce){
+  .m,.card::after,.logo-nube .nube{animation:none!important}
+  .m,.capa,.cabeza,.redes a,.card span.ver::before,.card span.ver::after{transition:none}
+}

@@ -1,6 +1,6 @@
 <footer>
     <div>
-        <span id="copyright">© davidmedibu.com 2021</span>
+        <span id="copyright">© davidmedibu.com 2026</span>
     </div>
     <div>
         <a href="http://www.facebook.com/davidmedibu">

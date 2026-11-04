@@ -3,146 +3,63 @@
   <head>
     <title>David Medibú</title>
     <?php include 'inc/head.php'; ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/previa.css">
+    <script src="js/previa.js" defer></script>
   </head>
-  <body>
-    <header>
-      <!--<img src="imagenes/cabecera.svg" alt="cabecera">-->
-      <video autoplay poster="imagenes/cabecera.svg" preload="auto" loop muted playsinline>
-        <source src="imagenes/vídeo-logos-640x360.mp4"/>
-        <p>Su navegador no admite videos HTML5</p>
-      </video>
-    </header>
+<body class="previa">
 
-    <section>
-      <div id="galeria">
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy01.php">
-              <img src="imagenes/galeria/croupi.svg" alt="Croupi">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy02.php">
-              <!--<img src="imagenes/galeria/loh.svg" alt="Legends of Hemato">-->
-              <img src="imagenes/galeria/loh.gif" alt="Legends of Hemato">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy03.php">
-              <img src="imagenes/galeria/medibu.svg" alt="Medibú">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy04.php">
-              <img src="imagenes/galeria/lamorsa.svg" alt="lamorsa">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy05.php">
-              <img src="imagenes/galeria/komsenso.svg" alt="Komsenso">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy06.php">
-              <img src="imagenes/galeria/cowandking.svg" alt="Cowandking">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy07.php">
-              <img src="imagenes/galeria/corriente_creativa.svg" alt="Corriente Creativa">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy08.php">
-              <!--<img src="imagenes/galeria/bic.svg" alt="Bic">-->
-              <img src="imagenes/galeria/bic.gif" alt="Bic">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy09.php">
-              <img src="imagenes/galeria/om.svg"  alt="Om">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy10.php">
-              <!--<img src="imagenes/galeria/vanacasa.svg" alt="Vanacasa">-->
-              <img src="imagenes/galeria/vanacasa.gif" alt="Vanacasa">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy11.php">
-              <img src="imagenes/galeria/sharon_bates.svg" alt="Sharon Bates">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy12.php">
-              <!--<img src="imagenes/galeria/alaficyl.svg" alt="Alaficyl">-->
-              <img src="imagenes/galeria/alaficyl.gif" alt="Alaficyl">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="servicios">
-      <img src="imagenes/servicios.gif" alt="servicios">
-    </section>
-    <div id="bannerblog">
-      <div class="sombra-1"></div>
-      <div class="rectangulo-verde"></div>
-      <a href="https://www.davidmedibu.com/editorialbu" target="_blank" rel="noopener">
-        <span class="titulo-roboto">Conoce</span>
-        <img src="imagenes/Editorial-buñuelos.png" alt="Editorial Buñuelos">
-        <span class="subtitulo">
-          <span class="linea1">donde publico</span>
-          <span class="linea2">mis <span class="destacado">cuentos infantiles</span></span>
-        </span>
+<div class="fondo" aria-hidden="true">
+  <div class="capa" data-d="0.25"><svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="nlg0" gradientUnits="userSpaceOnUse" x1="0" y1="41" x2="0" y2="183"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#fffaf0"/><stop offset="1" stop-color="#cfe3f0"/></linearGradient><linearGradient id="nlg1" gradientUnits="userSpaceOnUse" x1="0" y1="81" x2="0" y2="236"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#fffaf0"/><stop offset="1" stop-color="#cfe3f0"/></linearGradient><linearGradient id="nlg2" gradientUnits="userSpaceOnUse" x1="0" y1="306" x2="0" y2="468"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#fffaf0"/><stop offset="1" stop-color="#cfe3f0"/></linearGradient><linearGradient id="nlg3" gradientUnits="userSpaceOnUse" x1="0" y1="406" x2="0" y2="555"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#fffaf0"/><stop offset="1" stop-color="#cfe3f0"/></linearGradient><filter id="nls" filterUnits="userSpaceOnUse" x="-300" y="-300" width="2200" height="1600" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="4"/></filter></defs><g opacity="0.7"><g filter="url(#nls)" opacity=".55"><g fill="#7fb3d3"><rect x="72" y="127" width="220" height="59" rx="29"/><circle cx="133" cy="127" r="42"/><circle cx="193" cy="106" r="57"/><circle cx="248" cy="131" r="38"/></g></g><g fill="url(#nlg0)"><rect x="70" y="121" width="220" height="59" rx="29"/><circle cx="132" cy="121" r="42"/><circle cx="191" cy="100" r="57"/><circle cx="246" cy="125" r="38"/></g><g filter="url(#nls)" opacity=".55"><g fill="#7fb3d3"><rect x="942" y="174" width="240" height="64" rx="32"/><circle cx="1009" cy="174" r="46"/><circle cx="1074" cy="152" r="62"/><circle cx="1134" cy="179" r="41"/></g></g><g fill="url(#nlg1)"><rect x="940" y="168" width="240" height="64" rx="32"/><circle cx="1007" cy="168" r="46"/><circle cx="1072" cy="145" r="62"/><circle cx="1132" cy="173" r="41"/></g><g filter="url(#nls)" opacity=".55"><g fill="#7fb3d3"><rect x="207" y="403" width="250" height="66" rx="33"/><circle cx="277" cy="403" r="48"/><circle cx="344" cy="380" r="65"/><circle cx="407" cy="408" r="43"/></g></g><g fill="url(#nlg2)"><rect x="205" y="397" width="250" height="66" rx="33"/><circle cx="275" cy="397" r="48"/><circle cx="342" cy="373" r="65"/><circle cx="405" cy="402" r="43"/></g><g filter="url(#nls)" opacity=".55"><g fill="#7fb3d3"><rect x="1357" y="496" width="230" height="61" rx="31"/><circle cx="1421" cy="496" r="44"/><circle cx="1483" cy="474" r="59"/><circle cx="1541" cy="500" r="39"/></g></g><g fill="url(#nlg3)"><rect x="1355" y="489" width="230" height="61" rx="31"/><circle cx="1419" cy="489" r="44"/><circle cx="1482" cy="468" r="59"/><circle cx="1539" cy="494" r="39"/></g></g></svg></div>
+  <div class="capa" data-d="0.6"><svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ncg0" gradientUnits="userSpaceOnUse" x1="0" y1="142" x2="0" y2="388"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#fffaf0"/><stop offset="1" stop-color="#cfe3f0"/></linearGradient><linearGradient id="ncg1" gradientUnits="userSpaceOnUse" x1="0" y1="32" x2="0" y2="291"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#fffaf0"/><stop offset="1" stop-color="#cfe3f0"/></linearGradient><linearGradient id="ncg2" gradientUnits="userSpaceOnUse" x1="0" y1="472" x2="0" y2="692"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#fffaf0"/><stop offset="1" stop-color="#cfe3f0"/></linearGradient><filter id="ncs" filterUnits="userSpaceOnUse" x="-300" y="-300" width="2200" height="1600" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="7"/></filter></defs><g opacity="0.97"><g filter="url(#ncs)" opacity=".55"><g fill="#7fb3d3"><rect x="63" y="290" width="380" height="101" rx="51"/><circle cx="169" cy="290" r="72"/><circle cx="272" cy="253" r="98"/><circle cx="367" cy="297" r="65"/></g></g><g fill="url(#ncg0)"><rect x="60" y="279" width="380" height="101" rx="51"/><circle cx="166" cy="279" r="72"/><circle cx="269" cy="243" r="98"/><circle cx="364" cy="287" r="65"/></g><g filter="url(#ncs)" opacity=".55"><g fill="#7fb3d3"><rect x="1003" y="187" width="400" height="106" rx="53"/><circle cx="1115" cy="187" r="76"/><circle cx="1223" cy="149" r="103"/><circle cx="1323" cy="195" r="68"/></g></g><g fill="url(#ncg1)"><rect x="1000" y="177" width="400" height="106" rx="53"/><circle cx="1112" cy="177" r="76"/><circle cx="1220" cy="139" r="103"/><circle cx="1320" cy="184" r="68"/></g><g filter="url(#ncs)" opacity=".55"><g fill="#7fb3d3"><rect x="593" y="604" width="340" height="90" rx="45"/><circle cx="688" cy="604" r="65"/><circle cx="780" cy="572" r="88"/><circle cx="865" cy="610" r="58"/></g></g><g fill="url(#ncg2)"><rect x="590" y="595" width="340" height="90" rx="45"/><circle cx="685" cy="595" r="65"/><circle cx="777" cy="562" r="88"/><circle cx="862" cy="601" r="58"/></g></g></svg></div>
+  <div class="cabeza" data-d="0.45"><svg xmlns="http://www.w3.org/2000/svg" viewBox="506 160 154 194" aria-hidden="true"><path fill="#453524" d="M 551.210938 248.304688 C 542.097656 248.304688 534.984375 245.183594 535.109375 240.066406 C 535.230469 234.945312 543.097656 232.574219 550.964844 233.699219 C 548.839844 221.089844 547.34375 198.863281 575.183594 190.625 C 603.023438 182.386719 620.003906 200.988281 619.128906 222.210938 C 618.257812 243.4375 609.640625 263.160156 608.269531 267.78125 C 615.261719 267.40625 621.253906 255.796875 628.121094 257.667969 C 634.488281 254.046875 640.980469 255.296875 642.226562 257.917969 C 643.476562 260.539062 641.304688 262.320312 638.683594 263.441406 C 642.679688 267.1875 641.476562 272.898438 635.359375 270.652344 C 639.230469 275.894531 632.738281 280.265625 626.371094 273.648438 C 625.496094 275.648438 623.375 276.519531 620.628906 275.769531 C 618.132812 280.140625 610.890625 287.007812 603.648438 290.128906 C 602.402344 302.238281 622.25 316.097656 636.609375 319.71875 C 650.964844 323.339844 657.761719 331.75 641.351562 335.449219 C 624.75 339.195312 588.667969 338.570312 566.945312 333.574219 C 545.21875 328.582031 539.476562 304.238281 539.726562 291.753906 C 539.976562 279.265625 543.597656 269.402344 551.089844 259.292969 C 543.347656 256.421875 536.855469 248.929688 551.210938 248.304688 "/><path fill="#453524" d="M 567.566406 311.601562 C 559.511719 295.195312 525.617188 299.867188 540.148438 322.953125 C 529.484375 322.769531 526.734375 331.757812 533.269531 334.894531 C 539.707031 337.988281 552.960938 334.886719 567.449219 333.453125 C 569.464844 333.25 570.476562 329.355469 569.054688 327.914062 C 568.238281 323.277344 567.992188 316.78125 567.566406 311.601562 "/><path fill="#453524" d="M 550.359375 286.074219 C 542.570312 282.542969 534.820312 273.835938 533.050781 268.964844 C 530.96875 270.085938 527.746094 268.992188 527.074219 266.472656 C 523.835938 269.25 520.566406 271.105469 519.09375 269.78125 C 517.710938 268.542969 519.339844 264.726562 523.644531 262.75 C 523.703125 262.445312 523.328125 261.761719 523.03125 261.667969 C 520.453125 263.789062 515.941406 264.957031 514.890625 262.9375 C 514.445312 262.085938 516.046875 259.644531 518.613281 257.773438 C 515.816406 256.777344 513.621094 254.886719 514.855469 253.480469 C 516.410156 251.714844 521.496094 253.238281 525.464844 255.453125 C 527.640625 255.558594 529.886719 256.539062 531.929688 258.96875 C 537.207031 265.238281 543.445312 269.363281 548.890625 271.363281 Z M 550.359375 286.074219 "/><path fill="#453524" d="M 627.511719 315.78125 C 631.984375 311.773438 637.378906 314.394531 637.414062 319.742188 C 640.925781 316.089844 645.550781 319.480469 645.085938 324.105469 C 644.617188 328.8125 623.992188 318.941406 627.511719 315.78125 "/><path fill="#453524" d="M 593.753906 197.996094 C 604.113281 179 628.53125 191.828125 615.460938 210.820312 C 630.011719 214.765625 631.246094 232.03125 616.199219 238.199219 C 623.847656 249.542969 618.914062 262.863281 601.398438 265.328125 C 595.480469 248.558594 586.601562 209.09375 593.753906 197.996094 "/><path fill="#95c9b4" d="M 639.878906 323.535156 C 632.285156 321.164062 602.140625 310.710938 600.910156 292.707031 C 600.804688 291.21875 600.828125 289.65625 600.9375 288.042969 C 609 285.195312 617.46875 277.183594 619.652344 272.480469 C 621.628906 273.773438 624.9375 272.960938 625.820312 270.507812 C 628.804688 273.554688 631.90625 275.683594 633.488281 274.492188 C 634.96875 273.378906 633.675781 269.4375 629.554688 267.09375 C 629.527344 266.785156 629.953125 266.136719 630.257812 266.070312 C 632.644531 268.40625 637.042969 269.953125 638.261719 268.03125 C 638.777344 267.222656 638.171875 264.660156 632.738281 261.101562 C 633.816406 260.914062 635.6875 261.429688 636.859375 262.179688 C 639.066406 261.316406 640.039062 259.878906 639.105469 258.613281 C 637.710938 256.71875 632.511719 257.804688 628.367188 259.667969 C 626.191406 259.589844 623.871094 260.371094 621.625 262.613281 C 615.832031 268.410156 609.261719 271.984375 603.664062 273.511719 C 607.878906 257.878906 615.367188 239.777344 615.707031 224.136719 C 616.199219 201.445312 602.632812 190.839844 583.148438 192.320312 C 563.664062 193.800781 547.136719 208.351562 554.535156 237.210938 C 536.292969 231.511719 528.988281 247.054688 558.765625 245.746094 C 558.765625 247.117188 558.734375 249.441406 558.6875 250.210938 C 538.726562 248.367188 547.53125 257.355469 555.769531 257.929688 C 531.847656 285.554688 544.917969 319.835938 561.445312 328.71875 C 577.96875 337.597656 636.671875 335.375 643.824219 332.417969 C 650.976562 329.457031 647.769531 326.003906 639.878906 323.535156 "/><path fill="#453524" d="M 576.859375 205.023438 C 578.667969 203.9375 589.152344 194.210938 604.691406 196.679688 C 600.660156 193.226562 598.441406 193.0625 598.441406 193.0625 C 606.085938 167.410156 569.335938 171.109375 572.050781 204.40625 C 572.542969 205.394531 575.628906 205.761719 576.859375 205.023438 "/><path fill="#453524" d="M 563.050781 233.949219 C 563.050781 232.175781 564.484375 230.742188 566.253906 230.742188 C 568.027344 230.742188 569.464844 232.175781 569.464844 233.949219 C 569.464844 235.71875 568.027344 237.152344 566.253906 237.152344 C 564.484375 237.152344 563.050781 235.71875 563.050781 233.949219 "/><path fill="#453524" d="M 581.171875 233.921875 C 581.171875 231.058594 583.492188 228.738281 586.355469 228.738281 C 589.21875 228.738281 591.539062 231.058594 591.539062 233.921875 C 591.539062 236.785156 589.21875 239.105469 586.355469 239.105469 C 583.492188 239.105469 581.171875 236.785156 581.171875 233.921875 "/><path fill="#f2e1c3" d="M 549.777344 272.152344 C 542.804688 286.964844 542.097656 328.332031 582.984375 331.429688 C 569.988281 318.582031 575.988281 294.433594 580.023438 280.621094 C 586.273438 259.246094 556.417969 258.035156 549.777344 272.152344 "/><path fill="#95c9b4" d="M 588.792969 314.101562 C 591.414062 310.230469 600.027344 303.613281 607.519531 308.605469 C 615.011719 313.601562 611.515625 324.335938 605.398438 327.832031 C 619.878906 326.710938 621.003906 335.449219 620.003906 339.445312 C 619.003906 343.4375 611.015625 348.433594 603.398438 341.441406 C 588.542969 337.320312 581.175781 337.945312 585.171875 329.582031 C 586.667969 320.714844 588.792969 314.101562 588.792969 314.101562 "/><path fill="#453524" d="M 589.316406 313.425781 C 596.90625 297.621094 621.753906 309.605469 609.765625 326.585938 C 621.003906 327.832031 623.625 336.199219 621.378906 340.941406 C 619.128906 345.6875 608.953125 349.214844 600.996094 341.066406 C 596.125 340.410156 590.132812 339.007812 585.453125 337.414062 C 583.320312 336.691406 582.878906 332.367188 584.703125 331.046875 C 584.515625 332.359375 584.796875 334.605469 586.109375 335.449219 C 587.417969 336.292969 594.441406 337.257812 601.933594 338.632812 C 607.925781 344.8125 617.003906 343.023438 618.382812 339.195312 C 619.761719 335.363281 618.007812 327.582031 603.898438 328.332031 C 616.507812 319.09375 603.773438 300.867188 589.316406 313.425781 "/></svg></div>
+</div>
+
+<section id="previa">
+  <div class="previa-cabecera">
+    <h1 class="logo-nube"><span class="nube"><svg viewBox="0 0 800 460" aria-hidden="true"><defs><linearGradient id="nxg0" gradientUnits="userSpaceOnUse" x1="0" y1="14" x2="0" y2="427"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#fffaf0"/><stop offset="1" stop-color="#cfe3f0"/></linearGradient><filter id="nxs" filterUnits="userSpaceOnUse" x="-300" y="-300" width="2200" height="1600" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="6"/></filter></defs><g opacity="1"><g filter="url(#nxs)" opacity=".55"><g fill="#7fb3d3"><rect x="85" y="262" width="640" height="170" rx="85"/><circle cx="264" cy="262" r="122"/><circle cx="437" cy="201" r="165"/><circle cx="597" cy="274" r="109"/></g></g><g fill="url(#nxg0)"><rect x="80" y="245" width="640" height="170" rx="85"/><circle cx="259" cy="245" r="122"/><circle cx="432" cy="184" r="165"/><circle cx="592" cy="257" r="109"/></g></g></svg></span><img src="imagenes/logo-medibu-texto.svg" alt="Medibú, David Medibú"></h1>
+  </div>
+
+  <!-- CAMBIA los href a tus secciones reales -->
+  <ul class="cards">
+    <li>
+      <a class="card" href="branding.php" aria-label="Entrar: Branding animado">
+        <i class="m"></i><i class="m"></i><i class="m"></i><i class="m"></i>
+        <h2>Branding animado</h2>
+        <p>Motion design aplicado a identidades corporativas</p>
+        <span class="ver">Entrar</span>
       </a>
-    </div>
-    
-    <div id="muchosmas">
-      <a href="https://www.instagram.com/davidmedibu">
-          <img src="imagenes/icopie-inst.svg" alt="Instagram">
-          <span>muchos más trabajos en mi Instagram</span>
+    </li>
+    <li>
+      <a class="card" href="https://www.davidmedibu.com/editorialbu" aria-label="Entrar: Diseño editorial">
+        <i class="m"></i><i class="m"></i><i class="m"></i><i class="m"></i>
+        <h2>Diseño editorial</h2>
+        <p>Narrativa e ilustración para cuentos infantiles</p>
+        <span class="ver">Entrar</span>
       </a>
-    </div>
+    </li>
+    <li>
+      <a class="card" href="edtech.php" aria-label="Entrar: Tecnología educativa">
+        <i class="m"></i><i class="m"></i><i class="m"></i><i class="m"></i>
+        <h2>Tecnología educativa</h2>
+        <p>EdTech, gamificación y recursos pedagógicos</p>
+        <span class="ver">Entrar</span>
+      </a>
+    </li>
+  </ul>
+</section>
 
-    <div id="cocodroloescondido">
-      <img src="imagenes/cocodroloescondido.svg" alt="Cocodrolo escondido">
-    </div>
+<div id="sombra"></div>
 
-    <div id="sombra">
-    </div>
+<footer class="previa-pie">
+  <div id="copyright">© davidmedibu.com 2026</div>
+  <div class="redes">
+    <a href="http://www.facebook.com/davidmedibu" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V7c0-.8.2-1.2 1.3-1.2H17V3h-2.5C11.7 3 10.5 4.6 10.5 6.9v1.6H8v3h2.5V21H14v-9.5h2.4l.4-3H14z"/></svg></a>
+    <a href="https://www.linkedin.com/in/davidmedinaalonso" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.300V9h3.400v1.600h.1c.5-.9 1.600-1.800 3.400-1.800 3.600 0 4.300 2.400 4.300 5.500v6.200zM5.300 7.400a2.100 2.100 0 110-4.200 2.100 2.100 0 010 4.200zM7.100 20.500H3.600V9h3.500v11.500z"/></svg></a>
+    <a href="https://twitter.com/davidmedibu" aria-label="X (Twitter)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.500 3h3.100l-6.800 7.700L21.800 21h-6.200l-4.900-6.300L5.100 21H2l7.300-8.300L2.200 3h6.400l4.400 5.800L17.500 3zm-1.100 16.200h1.700L7.600 4.700H5.800l10.600 14.500z"/></svg></a>
+    <a href="https://www.instagram.com/davidmedibu" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.500" y="3.500" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.200" cy="6.800" r="1.200"/></svg></a>
+    <a href="https://www.youtube.com/channel/UCD9gJC2REfOQC8H3Zvx1nVQ/featured" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.600 7.200a2.500 2.500 0 00-1.800-1.800C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 002.400 7.200C2 8.800 2 12 2 12s0 3.200.4 4.800a2.500 2.500 0 001.800 1.800C5.800 19 12 19 12 19s6.200 0 7.800-.4a2.500 2.500 0 001.800-1.800C22 15.200 22 12 22 12s0-3.200-.4-4.800zM10 15V9l5.200 3L10 15z"/></svg></a>
+  </div>
+</footer>
 
-    <section id="cualidades">
-      <img src="imagenes/cualidades.svg" alt="cualidades">
-    </section>
-
-
-
-    <?php include 'inc/footer.php'; ?>
-
-  </body>
+</body>
 </html>
