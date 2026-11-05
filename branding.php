@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>David Medibú</title>
+    <title>Branding animado - David Medibú</title>
     <?php include 'inc/head.php'; ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
@@ -14,113 +13,30 @@
       </video>
     </header>
 
-    <section>
-      <div id="galeria">
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy01.php">
-              <img src="imagenes/galeria/croupi.svg" alt="Croupi">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy02.php">
-              <!--<img src="imagenes/galeria/loh.svg" alt="Legends of Hemato">-->
-              <img src="imagenes/galeria/loh.gif" alt="Legends of Hemato">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy03.php">
-              <img src="imagenes/galeria/medibu.svg" alt="Medibú">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy04.php">
-              <img src="imagenes/galeria/lamorsa.svg" alt="lamorsa">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy05.php">
-              <img src="imagenes/galeria/komsenso.svg" alt="Komsenso">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy06.php">
-              <img src="imagenes/galeria/cowandking.svg" alt="Cowandking">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy07.php">
-              <img src="imagenes/galeria/corriente_creativa.svg" alt="Corriente Creativa">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy08.php">
-              <!--<img src="imagenes/galeria/bic.svg" alt="Bic">-->
-              <img src="imagenes/galeria/bic.gif" alt="Bic">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy09.php">
-              <img src="imagenes/galeria/om.svg"  alt="Om">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy10.php">
-              <!--<img src="imagenes/galeria/vanacasa.svg" alt="Vanacasa">-->
-              <img src="imagenes/galeria/vanacasa.gif" alt="Vanacasa">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy11.php">
-              <img src="imagenes/galeria/sharon_bates.svg" alt="Sharon Bates">
-            </a>
-          </div>
-        </div>
-        <div class="miniatura">
-          <div class="miniaturacontenido">
-            <a href="proy12.php">
-              <!--<img src="imagenes/galeria/alaficyl.svg" alt="Alaficyl">-->
-              <img src="imagenes/galeria/alaficyl.gif" alt="Alaficyl">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="franja"></div>
+    <?php $seccion_actual = 'branding'; include 'inc/menu.php'; ?>
+
+    <?php
+    $proyectos = [
+      ['proy01.php', 'imagenes/galeria/croupi.svg', 'Croupi'],
+      ['proy02.php', 'imagenes/galeria/loh.gif', 'Legends of Hemato'],
+      ['proy03.php', 'imagenes/galeria/medibu.svg', 'Medibú'],
+      ['proy04.php', 'imagenes/galeria/lamorsa.svg', 'lamorsa'],
+      ['proy05.php', 'imagenes/galeria/komsenso.svg', 'Komsenso'],
+      ['proy06.php', 'imagenes/galeria/cowandking.svg', 'Cowandking'],
+      ['proy07.php', 'imagenes/galeria/corriente_creativa.svg', 'Corriente Creativa'],
+      ['proy08.php', 'imagenes/galeria/bic.gif', 'Bic'],
+      ['proy09.php', 'imagenes/galeria/om.svg', 'Om'],
+      ['proy10.php', 'imagenes/galeria/vanacasa.gif', 'Vanacasa'],
+      ['proy11.php', 'imagenes/galeria/sharon_bates.svg', 'Sharon Bates'],
+      ['proy12.php', 'imagenes/galeria/alaficyl.gif', 'Alaficyl']
+    ];
+    include 'inc/galeria.php';
+    ?>
     <section id="servicios">
       <img src="imagenes/servicios.gif" alt="servicios">
     </section>
-    <div id="bannerblog">
-      <div class="sombra-1"></div>
-      <div class="rectangulo-verde"></div>
-      <a href="https://www.davidmedibu.com/editorialbu" target="_blank" rel="noopener">
-        <span class="titulo-roboto">Conoce</span>
-        <img src="imagenes/Editorial-buñuelos.png" alt="Editorial Buñuelos">
-        <span class="subtitulo">
-          <span class="linea1">donde publico</span>
-          <span class="linea2">mis <span class="destacado">cuentos infantiles</span></span>
-        </span>
-      </a>
-    </div>
+
     
     <div id="muchosmas">
       <a href="https://www.instagram.com/davidmedibu">
