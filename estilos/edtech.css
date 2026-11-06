@@ -1,0 +1,66 @@
+/* Fichas de proyecto de la sección EdTech. Se carga después de basico.css */
+#fichas{
+  max-width:60rem;margin:3.5rem auto 4rem;padding:0 1.5rem;
+  display:grid;gap:3rem;
+}
+.ficha{
+  position:relative;display:grid;grid-template-columns:15rem minmax(0,1fr);
+  gap:3.2rem;align-items:center;padding:2.4rem 2.6rem;
+  background:var(--crema);border-radius:2rem;
+  box-shadow:0 10px 24px -14px rgba(69,53,36,.4);
+  transition:box-shadow .3s;
+}
+.ficha:hover,.ficha:focus-within{box-shadow:0 16px 30px -14px rgba(69,53,36,.5)}
+
+/* imagen sobre capas de papel de seda, como las formas de las cards de la portada */
+.ficha-imagen{position:relative;isolation:isolate;margin:1rem}
+.ficha-imagen img{
+  position:relative;z-index:1;display:block;width:100%;aspect-ratio:1;object-fit:cover;
+  border-radius:1.4rem;rotate:-3deg;
+}
+.ficha-imagen .capa,.ficha-imagen::before{
+  content:"";position:absolute;z-index:0;mix-blend-mode:multiply;opacity:.95;
+  rotate:var(--rot);border-radius:var(--r1);
+  animation:flota 14s ease-in-out infinite alternate;
+  transition:translate .6s cubic-bezier(.3,1.6,.5,1),scale .6s cubic-bezier(.3,1.6,.5,1);
+}
+.ficha-imagen .capa:nth-child(1){inset:-1rem -1.6rem -1.8rem 1rem;background:var(--verde);--rot:8deg;--r1:58% 42% 52% 48%/46% 56% 44% 54%;--r2:46% 54% 60% 40%/54% 44% 56% 46%}
+.ficha-imagen .capa:nth-child(2){inset:-1.8rem 1.2rem .8rem -1.7rem;background:var(--verde-claro);--rot:-7deg;--r1:44% 56% 47% 53%/57% 43% 57% 43%;--r2:56% 44% 42% 58%/44% 58% 42% 56%;animation-delay:-4s}
+.ficha-imagen::before{inset:-.3rem -.9rem -1.1rem -1.1rem;background:var(--beige);--rot:3deg;--r1:53% 47% 61% 39%/48% 59% 41% 52%;--r2:42% 58% 50% 50%/58% 42% 58% 42%;animation-delay:-8s}
+.ficha:hover .capa:nth-child(1){translate:7px 5px;scale:1.04}
+.ficha:hover .capa:nth-child(2){translate:-7px -5px;scale:1.04}
+.ficha:hover .ficha-imagen::before{translate:-5px 6px}
+@keyframes flota{to{border-radius:var(--r2);rotate:calc(var(--rot) + 5deg)}}
+
+.ficha-texto h2{
+  font-family:var(--gochi);font-weight:400;font-size:clamp(2.2rem,4vw,2.9rem);
+  line-height:1.05;text-wrap:balance;color:var(--tinta);
+}
+.ficha-texto h2 a{color:inherit}
+.ficha-texto h2 a::after{content:"";position:absolute;inset:0;border-radius:2rem} /* toda la ficha es clicable */
+.ficha-texto h2 a:focus-visible::after{outline:3px solid var(--tinta);outline-offset:4px}
+.ficha-texto p{margin-top:.9rem;font-size:1.05rem;line-height:1.5}
+
+/* tecnologías: separadas de la descripción por un filete verde, en texto corrido (no botones) */
+.tecnologias{
+  display:flex;flex-wrap:wrap;gap:.2rem .65rem;margin-top:1.4rem;padding-top:1rem;
+  border-top:2px solid var(--verde);font-size:.95rem;font-weight:700;
+}
+.tecnologias li+li::before{content:"\00B7";margin-right:.65rem;color:rgba(69,53,36,.5)}
+
+.ficha-cta{
+  display:inline-block;margin-top:1.5rem;padding:.6rem 1.7rem;border-radius:999px;
+  background:var(--tinta);color:var(--crema);font-weight:700;
+  transition:background .25s,color .25s;
+}
+.ficha:hover .ficha-cta,.ficha:focus-within .ficha-cta{background:var(--verde);color:var(--tinta)}
+
+@media (max-width:700px){
+  #fichas{padding:0 1.2rem;margin-top:2.5rem}
+  .ficha{grid-template-columns:1fr;gap:2rem;padding:1.6rem 1.4rem 2rem}
+  .ficha-imagen{width:min(100%,13rem);margin:1.4rem auto .6rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .ficha,.ficha-cta,.ficha-imagen .capa,.ficha-imagen::before{transition:none}
+  .ficha-imagen .capa,.ficha-imagen::before{animation:none}
+}
