@@ -18,18 +18,18 @@
 
     <?php
     $proyectos = [
-      ['proy01.php', 'imagenes/galeria/croupi.svg', 'Croupi'],
-      ['proy02.php', 'imagenes/galeria/loh.gif', 'Legends of Hemato'],
-      ['proy03.php', 'imagenes/galeria/medibu.svg', 'Medibú'],
-      ['proy04.php', 'imagenes/galeria/lamorsa.svg', 'lamorsa'],
-      ['proy05.php', 'imagenes/galeria/komsenso.svg', 'Komsenso'],
-      ['proy06.php', 'imagenes/galeria/cowandking.svg', 'Cowandking'],
-      ['proy07.php', 'imagenes/galeria/corriente_creativa.svg', 'Corriente Creativa'],
-      ['proy08.php', 'imagenes/galeria/bic.gif', 'Bic'],
-      ['proy09.php', 'imagenes/galeria/om.svg', 'Om'],
-      ['proy10.php', 'imagenes/galeria/vanacasa.gif', 'Vanacasa'],
-      ['proy11.php', 'imagenes/galeria/sharon_bates.svg', 'Sharon Bates'],
-      ['proy12.php', 'imagenes/galeria/alaficyl.gif', 'Alaficyl']
+      ['proy01.php', 'imagenes/branding/croupi.svg', 'Croupi'],
+      ['proy02.php', 'imagenes/branding/loh.gif', 'Legends of Hemato'],
+      ['proy03.php', 'imagenes/branding/medibu.svg', 'Medibú'],
+      ['proy04.php', 'imagenes/branding/lamorsa.svg', 'lamorsa'],
+      ['proy05.php', 'imagenes/branding/komsenso.svg', 'Komsenso'],
+      ['proy06.php', 'imagenes/branding/cowandking.svg', 'Cowandking'],
+      ['proy07.php', 'imagenes/branding/corriente_creativa.svg', 'Corriente Creativa'],
+      ['proy08.php', 'imagenes/branding/bic.gif', 'Bic'],
+      ['proy09.php', 'imagenes/branding/om.svg', 'Om'],
+      ['proy10.php', 'imagenes/branding/vanacasa.gif', 'Vanacasa'],
+      ['proy11.php', 'imagenes/branding/sharon_bates.svg', 'Sharon Bates'],
+      ['proy12.php', 'imagenes/branding/alaficyl.gif', 'Alaficyl']
     ];
     include 'inc/galeria.php';
     ?>
