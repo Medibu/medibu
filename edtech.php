@@ -21,6 +21,15 @@
         'imagen'        => 'imagenes/edtech/el_pueblo.jpg',
         'alt'           => 'El panadero del pueblo, un muñeco de fieltro con bigote naranja, apila galletas en su tienda',
         'nueva_pestana' => true
+      ],
+      [
+        'titulo'        => 'Los Elefantes Equilibristas',
+        'descripcion'   => 'Minijuego para aprender a reconocer los números pares e impares, colocando elefantes en un balancín de circo.',
+        'tecnologias'   => ['Vibe Coding', 'JavaScript', 'SVG', 'Gemini', 'Claude'],
+        'enlace'        => 'https://davidmedibu.com/elefantes_equilibristas/',
+        'imagen'        => 'imagenes/edtech/elefantes_equilibristas.jpg',
+        'alt'           => 'Dos elefantes de dibujo, uno encima del otro, sobre una pista de circo',
+        'nueva_pestana' => true
       ]
     ];
     include 'inc/fichas.php';
