@@ -30,6 +30,15 @@
         'imagen'        => 'imagenes/edtech/elefantes_equilibristas.jpg',
         'alt'           => 'Dos elefantes de dibujo, uno encima del otro, sobre una pista de circo',
         'nueva_pestana' => true
+      ],
+      [
+        'titulo'        => 'Primo Coco',
+        'descripcion'   => 'Minijuego para aprender a reconocer los números primos: hay que cortar la fruta en una máquina de cocina, pero nunca el coco.',
+        'tecnologias'   => ['Vibe Coding', 'JavaScript', 'Gemini', 'Claude'],
+        'enlace'        => 'https://davidmedibu.com/primo_coco/',
+        'imagen'        => 'imagenes/edtech/primo_coco.jpg',
+        'alt'           => 'Un coco con cara de malo entre frutas sobre una encimera de cocina, bajo un marcador que muestra el número 7',
+        'nueva_pestana' => true
       ]
     ];
     include 'inc/fichas.php';
